@@ -64,14 +64,14 @@ class _ProfileDetailState extends State<ProfileDetail> {
                       keyboardType: TextInputType.name,
                       decoration: InputDecoration(
                         label: const Text("Nama"),
-                        hintText: "ex : Muhamad Faturrahman",
+                        hintText: "Contoh : Bintang Nur Alfiyah",
                         suffixIcon: Icon(Icons.abc_outlined),
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8)),
                       ),
                       validator: (value) {
                         if (value == "") {
-                          return "Nama Wajib Diisi";
+                          return "Nama Tidak Boleh Kosong!";
                         }
                         return null;
                       },
