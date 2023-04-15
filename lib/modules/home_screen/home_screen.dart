@@ -13,6 +13,7 @@ class HomeScreen extends StatefulWidget {
   });
   // final User user;
 
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -73,15 +74,15 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: tapBottomItem,
         items: [
           bottomMenuItem(
-            "Home",
+            "Menu Utama",
             Icons.home_rounded,
           ),
           bottomMenuItem(
-            "News",
+            "Berita",
             Icons.newspaper_rounded,
           ),
           bottomMenuItem(
-            "Menu",
+            "Pilihan Menu",
             Icons.menu_rounded,
           ),
         ],
@@ -94,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: [
           Container(
-            color: Colors.blue,
+            color: Colors.green,
             child: Column(
               children: [
                 SizedBox(
@@ -157,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
-                  color: Colors.blue[100],
+                  color: Colors.green[100],
                 ),
                 child: Row(
                   children: [
@@ -172,7 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           Flexible(
                             child: Text(
-                              "Edit Profile",
+                              "Edit Profile Anda",
                             ),
                           ),
                         ],
@@ -194,7 +195,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              color: Colors.blue,
+              color: Colors.green,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
